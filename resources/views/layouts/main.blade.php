@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="icon" href="{{Vite::asset('resources/img/hd.jpg')}}">
     <title>{{env('APP_NAME', 'Movies')}} | @yield('title')</title>
+    {{-- Importazione Vite e Sass --}}
+    @vite('resources/js/app.js')
     {{--CDNS--}}
     @yield('cdns')
 </head>
